@@ -1,0 +1,18 @@
+.not-found {
+  height: 100vh;
+  background-color: #0b0d17;
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+
+  h1 {
+    font-size: clamp(75px, 6.944vw, 6.944vw);
+  }
+
+  h2 {
+    font-size: clamp(25px, 3.472vw, 3.472vw);
+  }
+}

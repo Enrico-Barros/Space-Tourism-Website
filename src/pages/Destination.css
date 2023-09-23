@@ -1,0 +1,181 @@
+.destination {
+  height: 100vh;
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffff;
+  overflow: scroll;
+
+  @media (width < 1024px) {
+    background-image: url("../assets/destination/background-destination-tablet.jpg");
+  }
+
+  @media (width < 767px) {
+    background-image: url("../assets/destination/background-destination-mobile.jpg");
+  }
+
+  .key-div {
+    height: 100%;
+    display: flex;
+
+    @media (width < 1024px) {
+      flex-direction: column;
+    }
+
+    .planet-container {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 150px 0 0 200px;
+
+      @media (width < 1024px) {
+        height: 512px;
+        width: 100%;
+        padding: 0;
+        align-items: end;
+      }
+
+      img {
+        height: clamp(300px, 27.778vw, 27.778vw);
+
+        @media (width < 1024px) {
+          height: clamp(150px, 29.297vw, 29.297vw);
+        }
+
+        @media (width < 767px) {
+          height: 150px;
+          margin: 130px 0 50px 0;
+        }
+      }
+    }
+
+    .data-container {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 130px 135px 0 135px;
+
+      @media (width < 1024px) {
+        height: 512px;
+        width: 100%;
+        text-align: center;
+        padding: 0 85px;
+      }
+
+      @media (width < 767px) {
+        padding: 0 40px;
+      }
+
+      nav {
+        display: flex;
+        gap: 15px;
+
+        @media (width < 1024px) {
+          justify-content: center;
+          gap: 30px;
+        }
+
+        @media (width < 767px) {
+          gap: 15px;
+        }
+
+        button {
+          height: 20px;
+          width: 40px;
+          border-radius: 1px;
+          border: none;
+          border-bottom: 3px solid #0b0d17;
+          background-color: transparent;
+          cursor: pointer;
+          margin-bottom: 20px;
+
+          &:hover {
+            border-bottom: 3px solid #85868b;
+          }
+
+          @media (width < 1024px) {
+            width: 50px;
+          }
+        }
+
+        .active {
+          border-bottom: 3px solid #ffff;
+          cursor: default;
+
+          &:hover {
+            border-bottom: 3px solid #ffff;
+          }
+        }
+      }
+
+      h2 {
+        font-size: 6.944vw;
+        font-family: "Bellefair";
+        text-transform: uppercase;
+        margin-bottom: 15px;
+
+        @media (width < 1024px) {
+          font-size: 80px;
+        }
+
+        @media (width < 767px) {
+          font-size: 56px;
+        }
+      }
+
+      p {
+        height: auto;
+        font-family: "Barlow Condensed";
+        color: #d0d6f9;
+        font-size: clamp(16px, 1.25vw, 1.25vw);
+        line-height: 29px;
+        letter-spacing: 0.115vw;
+
+        @media (width < 1024px) {
+          height: auto;
+          font-size: 16px;
+        }
+
+        @media (width < 767px) {
+          font-size: 15px;
+          letter-spacing: 1px;
+        }
+      }
+
+      hr {
+        border: 0;
+        width: 100%;
+        background-color: rgba(110, 109, 109, 0.341);
+        height: 1px;
+        margin: 50px 0;
+      }
+
+      .distance-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        font-family: "Bellefair";
+        font-size: 1.944vw;
+        text-transform: uppercase;
+
+        @media (width < 1024px) {
+          justify-content: center;
+          font-size: 28px;
+        }
+
+        @media (width < 767px) {
+          flex-direction: column;
+          gap: 40px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
