@@ -18,7 +18,7 @@ function App() {
         <NavBar />
         <SideBar />
         <Routes>
-          <Route path="/Space-Tourism-Website/" element={<Home />} />
+          <Route path="/Space-Tourism-Website" element={<Home />} />
           <Route
             path="/Space-Tourism-Website/Destination"
             element={<Destination />}

@@ -29,7 +29,7 @@ const SideBar = () => {
       <nav>
         <NavLink
           className="links"
-          to="/Space-Tourism-Website/"
+          to="/Space-Tourism-Website"
           end
           onClick={HideSidebar}
         >
