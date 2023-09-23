@@ -13,16 +13,16 @@ const NavBar = () => {
         </div>
         <div className="line"></div>
         <nav>
-          <NavLink className="links" to="/Space-Tourism-Website">
+          <NavLink className="links" to="/Space-Tourism-Website" end>
             <b>00</b> &nbsp; Home
           </NavLink>
-          <NavLink className="links" to="/Destination">
+          <NavLink className="links" to="/Space-Tourism-Website/Destination">
             <b>01</b> &nbsp; Destination
           </NavLink>
-          <NavLink className="links" to="/Crew">
+          <NavLink className="links" to="/Space-Tourism-Website/Crew">
             <b>02</b> &nbsp; Crew
           </NavLink>
-          <NavLink className="links" to="/Technology">
+          <NavLink className="links" to="/Space-Tourism-Website/Technology">
             <b>03</b> &nbsp; Technology
           </NavLink>
         </nav>

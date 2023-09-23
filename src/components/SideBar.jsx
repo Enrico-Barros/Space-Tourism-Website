@@ -27,16 +27,32 @@ const SideBar = () => {
         <IconClose />
       </div>
       <nav>
-        <NavLink className="links" to="/" onClick={HideSidebar}>
+        <NavLink
+          className="links"
+          to="/Space-Tourism-Website"
+          onClick={HideSidebar}
+        >
           <b>00</b> &nbsp; Home
         </NavLink>
-        <NavLink className="links" to="/Destination" onClick={HideSidebar}>
+        <NavLink
+          className="links"
+          to="/Space-Tourism-Website/Destination"
+          onClick={HideSidebar}
+        >
           <b>01</b> &nbsp; Destination
         </NavLink>
-        <NavLink className="links" to="/Crew" onClick={HideSidebar}>
+        <NavLink
+          className="links"
+          to="/Space-Tourism-Website/Crew"
+          onClick={HideSidebar}
+        >
           <b>02</b> &nbsp; Crew
         </NavLink>
-        <NavLink className="links" to="/Technology" onClick={HideSidebar}>
+        <NavLink
+          className="links"
+          to="/Space-Tourism-Website/Technology"
+          onClick={HideSidebar}
+        >
           <b>03</b> &nbsp; Technology
         </NavLink>
       </nav>

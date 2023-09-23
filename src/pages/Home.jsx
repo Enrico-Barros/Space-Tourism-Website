@@ -19,7 +19,7 @@ const home = () => {
       </article>
       <div className="explore-container">
         <div className="explore-hover">
-          <Link to="/Destination" className="explore">
+          <Link to="/Space-Tourism-Website/Destination" className="explore">
             Explore
           </Link>
         </div>
