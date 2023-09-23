@@ -13,7 +13,7 @@ const NavBar = () => {
         </div>
         <div className="line"></div>
         <nav>
-          <NavLink className="links" to="/">
+          <NavLink className="links" to="/Space-Tourism-Website">
             <b>00</b> &nbsp; Home
           </NavLink>
           <NavLink className="links" to="/Destination">

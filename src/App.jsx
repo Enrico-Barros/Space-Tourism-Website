@@ -18,10 +18,10 @@ function App() {
         <NavBar />
         <SideBar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/destination" element={<Destination />} />
-          <Route path="/crew" element={<Crew />} />
-          <Route path="/technology" element={<Technology />} />
+          <Route path="/Space-Tourism-Website" element={<Home />} />
+          <Route path="/Destination" element={<Destination />} />
+          <Route path="/Crew" element={<Crew />} />
+          <Route path="Technology" element={<Technology />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
