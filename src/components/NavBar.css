@@ -8,81 +8,85 @@
   align-items: center;
   justify-content: space-between;
   z-index: 100;
+}
 
-  @media (width < 1024px) {
+.bar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3.958vw;
+  scale: 0.8;
+}
+
+.bar .line {
+  height: 1px;
+  width: 35vw;
+  min-width: 13.889vw;
+  border: 1px solid rgba(110, 109, 109, 0.341);
+  margin-right: -6vw;
+  z-index: 10;
+}
+
+.bar nav {
+  height: 100%;
+  width: 56.944vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 4.861vw;
+  background-color: rgba(255, 254, 254, 0.127);
+  backdrop-filter: blur(10px);
+}
+
+.bar .links {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffff;
+  font-family: "Barlow Condensed";
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 0.083vw;
+}
+
+.bar .links:hover {
+  border-bottom: 0.208vw solid #8a8b90;
+}
+
+.bar .active {
+  border-bottom: 0.208vw solid #ffff;
+}
+
+.bar .active:hover {
+  border-bottom: 0.208vw solid #ffff;
+}
+
+@media (max-width: 1024px) {
+  .bar .bar {
     margin-top: 0;
   }
 
-  .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 3.958vw;
-    scale: 0.8;
-
-    @media (width < 767px) {
-      margin: 5px 0 0 15px;
-    }
+  .bar .line {
+    display: none;
   }
 
-  .line {
-    height: 1px;
-    width: 35vw;
-    min-width: 13.889vw;
-    border: 1px solid rgba(110, 109, 109, 0.341);
-    margin-right: -6vw;
-    z-index: 10;
-
-    @media (width < 1024px) {
-      display: none;
-    }
+  .bar nav {
+    width: 55%;
+    padding: 0 20px;
   }
 
-  nav {
-    height: 100%;
-    width: 56.944vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0 4.861vw;
-    background-color: rgba(255, 254, 254, 0.127);
-    backdrop-filter: blur(10px);
+  .bar .links {
+    letter-spacing: 0;
+  }
+}
 
-    @media (width < 1024px) {
-      width: 55%;
-      padding: 0 20px;
-    }
+@media (max-width: 767px) {
+  .bar .logo {
+    margin: 5px 0 0 15px;
+  }
 
-    @media (width < 767px) {
-      display: none;
-    }
-
-    .links {
-      height: 100%;
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: #ffff;
-      font-family: "Barlow Condensed";
-      text-transform: uppercase;
-      font-size: 15px;
-      letter-spacing: 0.083vw;
-
-      @media (width < 1024px) {
-        letter-spacing: 0;
-      }
-
-      &:hover {
-        border-bottom: 0.208vw solid #8a8b90;
-      }
-    }
-
-    .active {
-      border-bottom: 0.208vw solid #ffff;
-
-      &:hover {
-        border-bottom: 0.208vw solid #ffff;
-      }
-    }
+  .bar nav {
+    display: none;
   }
 }

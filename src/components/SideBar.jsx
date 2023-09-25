@@ -20,13 +20,19 @@ const SideBar = () => {
 
   return (
     <div className={`sidebar ${isOpen ? "open" : ""}`}>
-      <div className="open-button" onClick={ShowSidebar}>
+      <div
+        className={`open-button ${isOpen ? "hide" : ""}`}
+        onClick={ShowSidebar}
+      >
         <IconExpand />
       </div>
-      <div className="close-button" onClick={HideSidebar}>
+      <div
+        className={`close-button ${isOpen ? "block" : ""}`}
+        onClick={HideSidebar}
+      >
         <IconClose />
       </div>
-      <nav>
+      <nav className={`${isOpen ? "flex" : ""}`}>
         <NavLink
           className="links"
           to="/Space-Tourism-Website/"
