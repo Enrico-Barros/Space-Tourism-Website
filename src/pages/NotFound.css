@@ -7,12 +7,12 @@
   justify-content: center;
   flex-direction: column;
   gap: 20px;
+}
 
-  h1 {
-    font-size: clamp(75px, 6.944vw, 6.944vw);
-  }
+.not-found h3 {
+  font-size: clamp(75px, 6.944vw, 6.944vw);
+}
 
-  h2 {
-    font-size: clamp(25px, 3.472vw, 3.472vw);
-  }
+.not-found p {
+  font-size: clamp(25px, 3.472vw, 3.472vw);
 }
