@@ -88,14 +88,14 @@
   text-transform: uppercase;
 }
 
-@media (width < 1024px) {
+@media (max-width: 1024px) {
   .home {
     background-image: url("../assets/home/background-home-tablet.jpg");
     flex-direction: column;
     gap: 50px;
   }
 
-  .home .article {
+  .home article {
     width: 100%;
   }
 
@@ -141,7 +141,7 @@
   }
 }
 
-@media (width < 767px) {
+@media (max-width: 767px) {
   .home {
     background-image: url("../assets/home/background-home-mobile.jpg");
     gap: 0;
