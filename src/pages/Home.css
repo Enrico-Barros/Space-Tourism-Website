@@ -42,7 +42,7 @@
   font-family: "Barlow Condensed";
   font-size: clamp(16px, 1.25vw, 1.25vw);
   letter-spacing: clamp(2px, 0.146vw, 0.146vw);
-  line-height: 27px;
+  line-height: 1.875vw;
   color: #d0d6f9;
 }
 
